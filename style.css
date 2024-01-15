@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(white , pink);
+}
+
+.req-box {  
+    height: 500px;
+    width: 300;
+    background: linear-gradient(white , rgb(255, 231, 249));
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.req-box h1 {
+    font-size: 28px;
+    margin: 10px 0px;
+}
+
+.req-box h5{
+    font-size: 25px;
+    color: red;
+    margin: 10px 20px;
+}
+
+.req-box .card-img {
+    height: 60%;
+    width: 90%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 60px;
+    animation-name: img;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    /* animation-direction:alternate-reverse; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes img {
+    form {border-radius : 100%;}
+    to {border-radius: 50%;}
+}
+
+.req-box button{
+    border-radius: 25px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #5f9ea0;
+    font-weight: 700;
+    border: none;
+    margin: 10px 6px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .req-box .removeBtn {
+    background-color: #dadada;
+    color: #111;
+} */
